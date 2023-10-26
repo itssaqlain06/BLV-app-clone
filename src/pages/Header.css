@@ -1,0 +1,17 @@
+.header {
+  height: 100px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.header ion-icon {
+  color: #ffffff;
+}
+
+.header-color {
+  background: rgb(206, 1, 1) !important;
+}

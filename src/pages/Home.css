@@ -1,0 +1,141 @@
+.container {
+  background-color: rgb(232, 0, 0);
+  border-radius: 0 0 5% 5%;
+  transition: 0.2s ease-in-out;
+  height: 50vh;
+}
+
+.expanded {
+  height: 90vh !important;
+}
+
+.upIcon {
+  top: 85% !important;
+}
+
+.downIcon {
+  top: 45% !important;
+}
+
+.rewards-statics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  width: calc(100% + 100px);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(232, 0, 0);
+  margin: 20px 10px 0 10px;
+}
+.logo {
+  position: absolute;
+  top: 120px;
+  left: 17.5%;
+}
+.logo ion-img {
+  height: 250px;
+  width: 250px;
+}
+.downArrow {
+  position: absolute;
+  left: 42.5%;
+  color: white;
+}
+.background {
+  background: rgb(232, 0, 0) !important;
+}
+ion-label {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+ion-text {
+  font-size: 13px;
+  color: #fafaf1;
+}
+
+.expandedSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  top: 60px;
+  transition: all 0.2s;
+}
+
+.total-stacked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(206, 1, 1) !important;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.total-stacked .total-stacked-item {
+  flex: 1;
+  padding: 10px 15px;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.stacked {
+  display: flex;
+  background: transparent;
+  padding: 10px;
+  width: 90%;
+}
+.stacked .stacked-item {
+  flex: 1;
+  padding: 10px 15px;
+  white-space: nowrap;
+  background: transparent;
+}
+.scrollable-content {
+  max-height: 330px;
+  overflow-y: auto;
+  transition: all 0.2s;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0;
+}
+.addPerson,
+.addReferralColor {
+  color: rgb(232, 0, 0);
+}
+
+.icons {
+  margin-right: 5px;
+}
+
+.body-parts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.timeLeft {
+  color: black;
+}
+ion-label h6 {
+  color: grey;
+}
+
+.bannerHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.banner-container {
+  margin-top: 20px;
+  height: 130%;
+  width: 100%;
+}

@@ -21,6 +21,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Swap from './pages/Swap';
 
 setupIonicReact();
 
@@ -28,12 +29,8 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <Route exact path="/"><Home /></Route>
+        <Route exact path="/swap"><Swap /></Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
