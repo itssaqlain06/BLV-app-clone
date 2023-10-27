@@ -6,16 +6,14 @@ import { Redirect, Route, useLocation } from 'react-router';
 import Home from './Home';
 import Swap from './Swap';
 
-
-
 const Footer: React.FC = () => {
     const location = useLocation();
     const currentLocation = location.pathname;
 
     return (
         <IonTabs>
-             <IonTabBar className='icon-color' slot="bottom">
-                <IonTabButton tab="home" href="/">
+            <IonTabBar className='icon-color' slot="bottom">
+                <IonTabButton tab="home" href="/home">
                     <IonIcon style={currentLocation === '/home' ? { opacity: '1' } : {}} icon={homeSharp} />
                     <IonLabel style={currentLocation === '/home' ? { opacity: '1' } : {}} >Home</IonLabel>
                 </IonTabButton>
@@ -40,11 +38,10 @@ const Footer: React.FC = () => {
                 </IonTabButton>
             </IonTabBar>
             <IonRouterOutlet>
-                <Redirect path='/' to='/home'/>
-                <Route path="/home" component={Home} />
-                <Route path="/swap" component={Swap} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/swap" component={Swap} />
             </IonRouterOutlet>
-           
+
         </IonTabs>
     );
 };

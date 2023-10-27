@@ -2,7 +2,7 @@
   background-color: rgb(232, 0, 0);
   border-radius: 0 0 5% 5%;
   transition: 0.2s ease-in-out;
-  height: 50vh;
+  height: 47vh;
 }
 
 .expanded {
@@ -10,17 +10,20 @@
 }
 
 .upIcon {
-  top: 85% !important;
+  top: 93% !important;
 }
 
 .downIcon {
-  top: 45% !important;
+  top: 46% !important;
 }
 
 .rewards-statics {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.parent {
+  padding-top: 6rem;
 }
 
 .row {
@@ -81,12 +84,12 @@ ion-text {
   flex: 1;
   padding: 10px 15px;
   white-space: nowrap;
-  background: transparent;
+  background: none;
 }
 
 .stacked {
   display: flex;
-  background: transparent;
+  background: none;
   padding: 10px;
   width: 90%;
 }
@@ -94,10 +97,10 @@ ion-text {
   flex: 1;
   padding: 10px 15px;
   white-space: nowrap;
-  background: transparent;
+  background: none;
 }
 .scrollable-content {
-  max-height: 330px;
+  max-height: 350px;
   overflow-y: auto;
   transition: all 0.2s;
 }

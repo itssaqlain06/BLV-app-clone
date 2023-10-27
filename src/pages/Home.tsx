@@ -4,8 +4,6 @@ import './Home.css';
 import Logo from '../assets/blove-logo.png';
 import Banner from '../assets/blove-banner.png';
 import { chevronDownOutline, chevronUpOutline, heart, personAdd } from 'ionicons/icons';
-import Header from './Header';
-import Footer from './Footer';
 
 const Home: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
@@ -55,39 +53,38 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent>
         <div className={`container ${expanded ? 'expanded' : ''}`}>
-
-          <Header />
-
-          <div className='rewards-statics'>
-            <div className="row">
-              <IonList className='background'>
-                <IonLabel>100 BLV</IonLabel> <br />
-                <IonText>My Staking</IonText>
-              </IonList>
-              <IonList className='background ion-text-end' >
-                <IonLabel  >145.00 BLV</IonLabel> <br />
-                <IonText>Staking Rewards</IonText>
-              </IonList>
-            </div>
-            <div className="row">
-              <IonList className='background'>
-                <IonLabel>13</IonLabel> <br />
-                <IonText>My Team</IonText>
-              </IonList>
-              <IonList className='background ion-text-end'>
-                <IonLabel>70.00 BLV</IonLabel> <br />
-                <IonText>Direct Rewards</IonText>
-              </IonList>
-            </div>
-            <div className="row">
-              <IonList className='background'>
-                <IonLabel>215.00 BLV</IonLabel> <br />
-                <IonText>My Rewards</IonText>
-              </IonList>
-              <IonList className='background ion-text-end'>
-                <IonLabel>00 BLV</IonLabel> <br />
-                <IonText>Team Rewards</IonText>
-              </IonList>
+          <div className="parent">
+            <div className='rewards-statics'>
+              <div className="row">
+                <IonList className='background'>
+                  <IonLabel>100 BLV</IonLabel> <br />
+                  <IonText>My Staking</IonText>
+                </IonList>
+                <IonList className='background ion-text-end' >
+                  <IonLabel  >145.00 BLV</IonLabel> <br />
+                  <IonText>Staking Rewards</IonText>
+                </IonList>
+              </div>
+              <div className="row">
+                <IonList className='background'>
+                  <IonLabel>13</IonLabel> <br />
+                  <IonText>My Team</IonText>
+                </IonList>
+                <IonList className='background ion-text-end'>
+                  <IonLabel>70.00 BLV</IonLabel> <br />
+                  <IonText>Direct Rewards</IonText>
+                </IonList>
+              </div>
+              <div className="row">
+                <IonList className='background'>
+                  <IonLabel>215.00 BLV</IonLabel> <br />
+                  <IonText>My Rewards</IonText>
+                </IonList>
+                <IonList className='background ion-text-end'>
+                  <IonLabel>00 BLV</IonLabel> <br />
+                  <IonText>Team Rewards</IonText>
+                </IonList>
+              </div>
             </div>
           </div>
           <div className='logo'>
@@ -187,7 +184,6 @@ const Home: React.FC = () => {
 
         </div>
       </IonContent>
-      <Footer />
     </IonPage>
 
   );
