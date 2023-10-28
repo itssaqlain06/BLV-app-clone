@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Swap from './pages/Swap';
+import Wallet from './pages/Wallet';
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 
@@ -32,9 +33,10 @@ const App: React.FC = () => (
     <IonReactRouter>
       <Header />
       <IonRouterOutlet>
-        <Redirect exact  path='/' to='/home' />
+        <Redirect exact path='/' to='/home' />
         <Route exact path="/home" component={Home} />
         <Route exact path="/swap" component={Swap} />
+        <Route exact path="/Wallet" component={Wallet} />
       </IonRouterOutlet>
       <Footer />
     </IonReactRouter>

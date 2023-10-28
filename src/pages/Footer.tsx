@@ -5,6 +5,7 @@ import './Footer.css';
 import { Redirect, Route, useLocation } from 'react-router';
 import Home from './Home';
 import Swap from './Swap';
+import Wallet from './Wallet';
 
 const Footer: React.FC = () => {
     const location = useLocation();
@@ -40,6 +41,7 @@ const Footer: React.FC = () => {
             <IonRouterOutlet>
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/swap" component={Swap} />
+                <Route exact path="/wallet" component={Wallet} />
             </IonRouterOutlet>
 
         </IonTabs>
