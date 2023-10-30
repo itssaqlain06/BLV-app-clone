@@ -1,0 +1,50 @@
+.stat-container {
+  height: 50px;
+  box-shadow: 0 0 3px 0 #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avail {
+  height: 100px;
+}
+.small-text {
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.available {
+  height: 120px;
+}
+.available .small-text {
+  margin-top: 7px;
+}
+
+.statWith {
+  margin-top: 20px;
+}
+
+.statDet {
+  display: flex;
+  border-radius: 30px;
+  padding: 13px 20px;
+  background: rgb(232, 0, 0);
+  color: #fff;
+}
+
+.statWith ion-icon {
+  font-size: 30px;
+  margin-left: 40px;
+}
+.withRew {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid rgb(232, 0, 0);
+  text-align: center;
+  margin-top: 15px;
+}

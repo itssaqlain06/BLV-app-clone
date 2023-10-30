@@ -1,0 +1,11 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+.div ion-label {
+  color: red;
+  margin-bottom: 10px;
+}

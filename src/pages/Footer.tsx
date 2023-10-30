@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
                     <IonIcon style={currentLocation === '/team' ? { opacity: '1' } : {}} icon={paw} />
                     <IonLabel style={currentLocation === '/team' ? { opacity: '1' } : {}} >Team</IonLabel>
                 </IonTabButton>
-                <IonTabButton tab="statics" href="/statics">
-                    <IonIcon style={currentLocation === '/statics' ? { opacity: '1' } : {}} icon={statsChartSharp} />
-                    <IonLabel style={currentLocation === '/statics' ? { opacity: '1' } : {}} >Statics</IonLabel>
+                <IonTabButton tab="statistics" href="/statistics">
+                    <IonIcon style={currentLocation === '/statistics' ? { opacity: '1' } : {}} icon={statsChartSharp} />
+                    <IonLabel style={currentLocation === '/statistics' ? { opacity: '1' } : {}} >Statistics</IonLabel>
                 </IonTabButton>
             </IonTabBar>
             <IonRouterOutlet>
