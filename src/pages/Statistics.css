@@ -1,3 +1,8 @@
+.ion-padding {
+  overflow-y: scroll !important;
+  max-height: 100vh !important;
+}
+
 .stat-container {
   height: 50px;
   box-shadow: 0 0 3px 0 #ccc;
@@ -5,7 +10,6 @@
   padding: 10px;
   margin-top: 15px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -18,8 +22,26 @@
   color: gray;
 }
 
+@media (max-width: 392px) {
+  .stat-container {
+    height: auto;
+    text-align: center;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+
+  .avail {
+    height: auto;
+  }
+  .available {
+    height: auto;
+  }
+}
+
 .available {
-  height: 120px;
+  height: auto;
 }
 .available .small-text {
   margin-top: 7px;
@@ -30,7 +52,7 @@
 }
 
 .statDet {
-  display: flex;
+  /* display: flex; */
   border-radius: 30px;
   padding: 13px 20px;
   background: rgb(232, 0, 0);

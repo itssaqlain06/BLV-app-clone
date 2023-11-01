@@ -2,25 +2,34 @@
   height: 13vh;
   background-color: rgb(232, 0, 0);
 }
-
-.icon-label-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+.total-stacked-item {
+  max-width: calc(50% - 10px);
 }
 
-.icon-label-item {
+.icon-label-container-swap {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-label-item-swap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 50px;
 }
-.icon-label-item ion-icon {
+
+@media (max-width: 200px) {
+  .icon-label-container-swap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icon-label-item-swap ion-icon {
   font-size: 50px;
   color: rgb(232, 0, 0);
+  display: block;
 }
-.icon-label-item ion-label {
+.icon-label-item-swap ion-label {
   color: black;
   font-size: 20px;
   font-weight: 100;
@@ -54,20 +63,6 @@ hr {
 }
 .heartText ion-icon {
   margin-right: 10px;
-}
-
-.offers {
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  padding: 20px;
-}
-
-.offers .offer1 {
-  border: 1px solid rgb(232, 0, 0);
-  border-radius: 20px;
-  padding: 10px 20px;
-  color: black;
 }
 
 .token-img {

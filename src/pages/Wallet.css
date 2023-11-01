@@ -95,33 +95,44 @@ hr {
   font-size: 14px;
   color: grey;
 }
-
 .rewards-wallet {
-  padding-top: 25%;
+  padding-top: 120px;
 }
 .rewards-wallet ion-label {
   font-weight: 100;
 }
+.walletParent {
+  display: flex;
+  justify-content: center;
+}
 
 .logoWallet {
-  position: absolute;
-  top: 152px;
-  left: 35%;
+  position: relative;
+  bottom: 120px;
   font-size: 120px;
   color: #fff;
 }
 
+/* .upDownIcon {
+  margin-top: 20px;
+} */
 .downArrow {
-  margin-top: 8px;
+  position: absolute;
+  top: 32.5vh;
   transition: 0.2s ease-in-out;
 }
 .upIconWallet {
   position: absolute;
-  top: 10vh;
+  top: 42.5vh;
 }
 
 .walletStats {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
+}
+.scrollable-content {
+  background: transparent;
+  position: relative;
+  bottom: 17vh;
 }

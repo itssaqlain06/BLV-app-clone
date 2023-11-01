@@ -36,16 +36,16 @@ const Team: React.FC = () => {
                     </IonGrid>
                 </div>
                 <hr />
-                <div className="icon-label-container">
-                    <div className="icon-label-item">
-                        <IonIcon icon={arrowDownCircleOutline} />
-                        <IonLabel>Deposit</IonLabel>
-                    </div>
-                    <div className="icon-label-item">
-                        <IonIcon icon={arrowUpCircleOutline} />
-                        <IonLabel>Withdraw</IonLabel>
-                    </div>
-                </div>
+                <div className="icon-label-container-swap">
+          <div className="icon-label-item-swap">
+            <IonIcon icon={arrowDownCircleOutline} />
+            <IonLabel>Deposit</IonLabel>
+          </div>
+          <div className="icon-label-item-swap">
+            <IonIcon icon={arrowUpCircleOutline} />
+            <IonLabel>Withdraw</IonLabel>
+          </div>
+        </div>
             </IonContent>
         </IonPage>
     );

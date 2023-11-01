@@ -3,18 +3,11 @@
   border-radius: 0 0 5% 5%;
   transition: 0.2s ease-in-out;
   height: 47vh;
+  overflow: hidden;
 }
 
 .expanded {
   height: 90vh !important;
-}
-
-.upIcon {
-  top: 93% !important;
-}
-
-.downIcon {
-  top: 46% !important;
 }
 
 .rewards-statics {
@@ -35,18 +28,36 @@
 }
 .logo {
   position: absolute;
-  top: 120px;
-  left: 17.5%;
-}
-.logo ion-img {
-  height: 250px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 250px;
+  height: 250px;
 }
+
+.logo ion-img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
 .downArrow {
   position: absolute;
-  left: 42.5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
+
+.upIcon {
+  top: 94.5% !important;
+}
+
+.downIcon {
+  top: 47% !important;
+}
+
 .background {
   background: rgb(232, 0, 0) !important;
 }
@@ -66,7 +77,7 @@ ion-text {
   align-items: center;
   position: relative;
   flex-direction: column;
-  top: 60px;
+  top: 190px;
   transition: all 0.2s;
 }
 
@@ -78,6 +89,7 @@ ion-text {
   padding: 10px;
   width: 95%;
   margin: 0 auto;
+  height: auto;
 }
 
 .total-stacked .total-stacked-item {
@@ -85,6 +97,12 @@ ion-text {
   padding: 10px 15px;
   white-space: nowrap;
   background: none;
+}
+@media (max-width:360px){
+  .total-stacked{
+    width: auto !important;
+    height: auto !important;
+  }
 }
 
 .stacked {
@@ -100,7 +118,7 @@ ion-text {
   background: none;
 }
 .scrollable-content {
-  max-height: 350px;
+  max-height: 370px;
   overflow-y: auto;
   transition: all 0.2s;
 }
@@ -122,6 +140,7 @@ ion-text {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background: transparent;
 }
 .timeLeft {
   color: black;
@@ -134,11 +153,19 @@ ion-label h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 23vh;
+  /* background: #000; */
 }
 
 .banner-container {
   margin-top: 20px;
   height: 130%;
-  width: 100%;
+  width: auto;
+}
+
+.addReferral {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

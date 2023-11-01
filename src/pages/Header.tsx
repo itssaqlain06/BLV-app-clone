@@ -21,6 +21,7 @@ import {
   alertCircle,
   analyticsSharp,
   arrowBack,
+  caretBack,
   clipboardSharp,
   close,
   documentText,
@@ -57,17 +58,20 @@ const Header: React.FC = () => {
         <IonToolbar className="header-color" color={"--ion-color-danger"}>
           <IonButtons slot="start">
             {currentPath === "/notification" ? (
-              <IonButton routerLink="/home" routerDirection="forward">
-                <IonIcon slot="icon-only" icon={arrowBack}></IonIcon>
-              </IonButton>
+              <IonBackButton defaultHref="/home" />
             ) : (
               <IonButton routerLink="/notification" routerDirection="forward">
-                <IonIcon slot="icon-only" icon={notificationsSharp}></IonIcon>
+                <IonIcon slot="icon-only" icon={notificationsSharp} />
               </IonButton>
             )}
           </IonButtons>
 
-          <IonTitle className="ion-text-center">
+          <IonTitle
+            className="ion-text-center"
+            style={{
+              marginRight: currentPath === "/notification" ? "40px" : "0",
+            }}
+          >
             {currentPath === "/home"
               ? "B-Love Network"
               : currentPath === "/swap"
